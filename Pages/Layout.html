@@ -1,0 +1,73 @@
+<!doctype html>
+<head> 
+<title>WebLayout</title>
+<link rel="shortcut icon" type="image/ICO" href="/favicon.ICO"/>
+</head>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 50vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: #e5f506;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 3;
+    min-height: 30vh;
+    background: rgb(192, 199, 196);
+  }
+  .content > aside {
+    background: rgb(240, 224, 7);
+    flex: 1;
+  }
+  header, footer {
+    display:flex;  
+    flex-flow: column wrap;
+    align-content: center;  
+    background: rgb(154, 205, 50);
+    font-weight: bold;
+    padding: 10px;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 2em;
+  }
+</style>
+<body>
+  <nav class="col-1">leftside</nav>
+  <div class="col-2">
+     <header style="font-size:40px;">Jeff Bezos</header> 
+    <main class="content">
+    <article>
+        <h2>Jeff Bio</h2>
+        <p>Jeff Bezos , byname of Jeffrey Preston Bezos, (born January 12, 1964, Albuquerque, New Mexico, U.S.), American entrepreneur who played a key role in the growth of e-commerce as the founder and chief executive officer of Amazon.com, Inc., an online merchant of books and later of a wide variety of products. </p>
+    </article>
+    <article>
+        <h2>Amazon.com</h2>
+        <p>Amazon quickly became the leader in e-commerce. Open 24 hours a day, the site was user-friendly, encouraging browsers to post their own reviews of books and offering discounts, personalized recommendations, and searches for out-of-print books. In June 1998 it began selling CDs, and later that year it added videos. In 1999 Bezos added auctions to the site and invested in other virtual stores. The success of Amazon encouraged other retailers, including major book chains, to establish online stores.</p>
+    </article>
+    <article>
+        <h2>Personal life </h2>
+        <p>In 1993 Bezos married Mackenzie Tuttle, whom he had met at D.E. Shaw. The couple announced in January 2019 that they were divorcing, and the following day the National Enquirer printed a story revealing that Bezos was having an affair with another woman. Bezos subsequently launched an investigation into how the tabloid had obtained his private text messages. Then, in February, he posted a lengthy essay online in which he accused officials at American</p>
+    </article>
+    <aside>rightside</aside>
+    </main>
+  	<footer>Copy rights reserved by AMAZON.COM</footer>
+
+  </div>
+</body>
